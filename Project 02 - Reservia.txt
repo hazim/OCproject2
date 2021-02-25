@@ -1,0 +1,13 @@
+Project 02 - Reservia
+
+Icons, 
+- [Font awesome](https://fontawesome.com)
+
+Colours, 
+- chart is blue #0065FC
+- light version #DEEBFF
+- background grey #F2F2F2
+
+
+Font, 
+- [Raleway](https://fonts.google.com/specimen/Raleway?preview.text_type=custom)
