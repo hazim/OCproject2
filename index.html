@@ -1,16 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Hazim Sami">
+    <meta name="description" content="This is my solution to Project 2 for my OpenClassrooms submission">
+    <!-- normalize served through CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    <!-- font awesome served through a CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <!-- this site's CSS stylesheet -->
     <link rel="stylesheet" href="css/style.css">
     <title>Reservia</title>
 </head>
 <body>
-    <div id="wrapper">
+    <!-- a div with a wrapper in order to generate a footer that is always in the bottom of the page regardless of the length of the content on the page. -->
+    <div id="wrapper"> 
+        <!-- the class container is nearly applied to every single element in order to have the flexibility of having the footer background filing the entire length of any screen regardles although we want to condtrain the maximum width of our page layout -->
         <header class="container">
             <h1><img src="assets/Reservia.svg" alt="Reservia Logo"></h1>
             <nav>
@@ -20,11 +27,13 @@
             </nav>
         </header>
         
+        <!-- this is the section with the serch input box -->
         <section class="container">
             <h2>Find a place for your dream vacation</h2>
             <p>Downtown or in nature</p>
         </section>
         
+        <!-- section that has the filter buttons -->
         <section class="filters container">
             <h3>Filters</h3>
             <button><i class="fas fa-money-bill-wave"></i> Low cost</button>
@@ -33,12 +42,15 @@
             <button><i class="fas fa-dog"></i> Pets allowed</button>
         </section>
         
+        <!-- this section has the warning dialog box -->
         <section class="notification container">
             <p><i class="fas fa-info-circle"></i> More than 500 accommodations are available in this city</p>
         </section>
         
+        <!-- main container that dispalys the bulk of the information presented on the site. This section would still make sense without the rest of the content on the page. -->
         <main class="container">
-            <div class="left-card graybg">
+            <!-- this section displays the result form your search -->
+            <section class="left-card graybg">
                 <h2>Accommodations in Marseille</h2>
                 <article class="accommodations-card">
                     <!-- <img src="" alt="" width="" height=""> -->
@@ -46,16 +58,17 @@
                     <p>Night starting at <span>25&euro;</span></p>
                 </article>
                 <h3>Show more</h3>
-            </div>
+            </section>
         
-            <div class="right-card graybg">
+            <!-- this section displays the most populat searches -->
+            <section class="right-card graybg">
                 <h2>Most Popular</h2>
                 <article class="popular-card">
                     <!-- <img src="" alt="" width="" height=""> -->
                     <h4>Auberge la Cannebière</h4>
                     <p>Night starting at <span>25&euro;</span></p>
                 </article>
-            </div>
+            </section>
         </main>
     
         <section class="container">
@@ -69,6 +82,7 @@
         </section>
     </div>
 
+    <!-- this is the footer -->
     <footer>
         <div class="footer container">
             <div class="footer-col">
