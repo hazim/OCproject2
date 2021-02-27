@@ -1,15 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,700;1,300&display=swap');
 
 body {
-    max-width: 1200px;
-    margin: 20px auto;
+    margin: 0 auto;
     font-family: 'Raleway', sans-serif;
+    
+}
+
+#wrapper {
+    min-height: calc(100vh - 190px);
+    padding: 10px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+}
+
+h1, h3 {
+    margin: 0;
 }
 
 nav a {
@@ -19,16 +33,22 @@ nav a {
     color: #0065fc;
 }
 
+.filters {
+    display: flex;
+    align-items: center;
+}
+
 button {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 3em;
+    /* height: 3em; */
     background-color: white;
     border: 2px solid #F2F2F2;
     border-radius: 30px;
     font-weight: bold;
-    /* padding: 0; */
+    padding: 0 20px 0 0;
+    margin-left: 10px;
 }
 
 button .fas {
@@ -36,11 +56,15 @@ button .fas {
     justify-content: center;
     align-items: center;
     background-color: #DEEBFF;
-    height: 3em;
-    width: 3em;
+    height: 2em;
+    width: 2em;
     border-radius: 50%;
-    margin: 0;
-    color: #0065fc;
+    margin-right: 15px;
+    color: #0065fc;    
+}
+
+main {
+    display: flex;
 }
 
 .graybg {
@@ -49,14 +73,31 @@ button .fas {
     padding: 20px;
 }
 
+.left-card {
+    flex-grow: 2;
+    margin-right: 10px;
+}
+
+
 footer {
     background-color: #F2F2F2;
     padding: 1rem;
+}
+
+.footer {
     display: flex;
-    justify-content: space-between;
+    text-transform: capitalize;
 }
 
 .footer-col {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
+}
+
+footer a {
+    font-size: .8em;
+    line-height: 2;
+    text-decoration: none;
+    color: black
 }

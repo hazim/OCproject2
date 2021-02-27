@@ -10,68 +10,83 @@
     <title>Reservia</title>
 </head>
 <body>
-    <header>
-        <img src="assets/Reservia ressources EN/images/logo/Reservia.svg" alt="Reservia Logo">
-        <!-- <h1>Reservia</h1> -->
-        <nav>
-            <a href="#">accommodations</a>
-            <a href="#">activities</a>
-            <a href="">sign up</a>
-        </nav>
-    </header>
-   
-    <h2>Find a place for your dream vacation</h2>
-    <p>Downtown or in nature</p>
-
-    <h3>Filters</h3>
-    <button><i class="fas fa-money-bill-wave"></i> Low cost</button>
-    <button><i class="fas fa-heart"></i> Romantic</button>
-    <button><i class="fas fa-child"></i> Family-friendly</button>
-    <button><i class="fas fa-dog"></i> Pets allowed</button>
-
-    <p><i class="fas fa-info-circle"></i> More than 500 accommodations are available in this city</p>
-
-    <div class="graybg">
-        <h2>Accommodations in Marseille</h2>
-        <article class="accommodations-card">
-            <!-- <img src="" alt="" width="" height=""> -->
-            <h4>Auberge la Cannebière</h4>
-            <p>Night starting at <span>25&euro;</span></p>
-        </article>
+    <div id="wrapper">
+        <header class="container">
+            <h1><img src="assets/Reservia.svg" alt="Reservia Logo"></h1>
+            <nav>
+                <a href="#">accommodations</a>
+                <a href="#">activities</a>
+                <a href="">sign up</a>
+            </nav>
+        </header>
+        
+        <section class="container">
+            <h2>Find a place for your dream vacation</h2>
+            <p>Downtown or in nature</p>
+        </section>
+        
+        <section class="filters container">
+            <h3>Filters</h3>
+            <button><i class="fas fa-money-bill-wave"></i> Low cost</button>
+            <button><i class="fas fa-heart"></i> Romantic</button>
+            <button><i class="fas fa-child"></i> Family-friendly</button>
+            <button><i class="fas fa-dog"></i> Pets allowed</button>
+        </section>
+        
+        <section class="notification container">
+            <p><i class="fas fa-info-circle"></i> More than 500 accommodations are available in this city</p>
+        </section>
+        
+        <main class="container">
+            <div class="left-card graybg">
+                <h2>Accommodations in Marseille</h2>
+                <article class="accommodations-card">
+                    <!-- <img src="" alt="" width="" height=""> -->
+                    <h4>Auberge la Cannebière</h4>
+                    <p>Night starting at <span>25&euro;</span></p>
+                </article>
+                <h3>Show more</h3>
+            </div>
+        
+            <div class="right-card graybg">
+                <h2>Most Popular</h2>
+                <article class="popular-card">
+                    <!-- <img src="" alt="" width="" height=""> -->
+                    <h4>Auberge la Cannebière</h4>
+                    <p>Night starting at <span>25&euro;</span></p>
+                </article>
+            </div>
+        </main>
+    
+        <section class="container">
+        <h2>Activities in Marseille</h2>
+            <div>
+                <div class="activities-card">
+                    <!-- <img src="" alt="" height=""> -->
+                    <h4>Old Port</h4>
+                </div>
+            </div>
+        </section>
     </div>
 
-    <div class="graybg">
-        <h2>Most Popular</h2>
-        <article class="popular-card">
-            <!-- <img src="" alt="" width="" height=""> -->
-            <h4>Auberge la Cannebière</h4>
-            <p>Night starting at <span>25&euro;</span></p>
-        </article>
-    </div>
-
-    <h2>Activities in Marseille</h2>
-    <div>
-        <div class="activities-card">
-            <!-- <img src="" alt="" height=""> -->
-            <h4>Old Port</h4>
-        </div>
-    </div>
     <footer>
-        <div class="footer-col">
-            <h5>about</h5>
-            <a href="#">site map</a>
-            <a href="#">general terms and conditions</a>
-            <a href="#">data and privacy</a>
-        </div>
-        <div class="footer-col">
-            <h5>our accommodations</h5>
-            <a href="#">quality assessment</a>
-            <a href="#">you have a hotel?</a>
-        </div>
-        <div class="footer-col">
-            <h5>assistance</h5>
-            <a href="#">help desk</a>
-            <a href="#">contact us</a>
+        <div class="footer container">
+            <div class="footer-col">
+                <h5>about</h5>
+                <a href="#">site map</a>
+                <a href="#">general terms and conditions</a>
+                <a href="#">data and privacy</a>
+            </div>
+            <div class="footer-col">
+                <h5>our accommodations</h5>
+                <a href="#">quality assessment</a>
+                <a href="#">you have a hotel?</a>
+            </div>
+            <div class="footer-col">
+                <h5>assistance</h5>
+                <a href="#">help desk</a>
+                <a href="#">contact us</a>
+            </div>
         </div>
     </footer>
 </body>
