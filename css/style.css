@@ -22,7 +22,7 @@ header {
     align-items: flex-start;
 }
 
-h1, h3 {
+h1, h2, h3, h4 {
     margin: 0;
 }
 
@@ -60,7 +60,7 @@ button .fas {
     width: 2em;
     border-radius: 50%;
     margin-right: 15px;
-    color: #0065fc;    
+    color: #0065FC;    
 }
 
 main {
@@ -76,6 +76,23 @@ main {
 .left-card {
     flex-grow: 2;
     margin-right: 10px;
+}
+
+.accommodations-card img {
+    width: 200px;
+    border-radius: 15px 15px 0 0;   
+}
+
+.accommodations-card {
+    background-color: white;
+    width: 200px;
+    padding: 5px;
+    border-radius: 20px;
+    filter: drop-shadow(0 0 0.75rem darkgray);
+}
+
+.stared {
+    color: #0065FC;
 }
 
 
