@@ -22,9 +22,11 @@
         <header class="container top">
             <h1><img src="assets/Reservia.svg" alt="Reservia Logo"></h1>
             <nav>
-                <a href="#">accommodations</a>
-                <a href="#">activities</a>
-                <a href="">sign up</a>
+                <div class="top-nav-bottom">
+                    <a href="#">accommodations</a>
+                    <a href="#">activities</a>
+                </div>
+                    <a href="#"><strong>sign up</strong></a>
             </nav>
         </header>
         
@@ -45,7 +47,7 @@
             </form>
         </section>
         
-        <!-- section that has the filter buttons -->
+        <!-- Filter section: with filter buttons -->
         <section class="filters container">
             <h3>Filters</h3>
             <button class="filters-btn"><i class="fas fa-money-bill-wave"></i> Low cost</button>
@@ -54,54 +56,198 @@
             <button class="filters-btn"><i class="fas fa-dog"></i> Pets allowed</button>
         </section>
         
-        <!-- this section has the warning dialog box -->
+        <!-- Notification section: dialog box -->
         <section class="notification container">
-            <p><i class="fas fa-info"></i> More than 500 accommodations are available in this city</p>
+            <i class="fas fa-info"></i> 
+            <p>More than 500 accommodations are available in this city</p>
         </section>
         
         <!-- main container that displays the bulk of the information presented on the site. This section would still make sense without the rest of the content on the page. -->
         <main class="container">
             <!-- this section displays the result form your search -->
-            <section class="left-card graybg">
+            <section class="accommodations-container graybg">
                 <h2>Accommodations in Marseille</h2>
                 
-                <div class="accommodations-card-wrapper">
+                <div class="accommodations-cards-container">
                     
                     <article class="accommodations-card">
-                        <img src="assets/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="bunk bed in the heart of the city." width="" height="">
-                        <h4>Auberge la Cannebière</h4>
-                        <p>Night starting at <strong>25&euro;</strong></p>
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <span class="rating-gray">
-                                <i class="fas fa-star"></i>
-                            </span>
+                        <div class="accommodations-card-header">
+                            <img src="assets/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="bunk bed in the heart of the city." width="" height="">                           
                         </div>
+                        <div class="accommodations-card-body">
+                            <h4>Auberge la Cannebière</h4>
+                            <p>Night starting at <strong>25&euro;</strong></p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="rating-gray">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                            </div>
+                        </div>   
                     </article>
-                        <!-- <img src="assets/hebergements/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="bunk bed in the heart of the city." width="" height=""> -->
-                        <!-- <img src="assets/hebergements/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="bunk bed in the heart of the city." width="" height=""> -->
-                        <!-- <img src="assets/hebergements/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="bunk bed in the heart of the city." width="" height=""> -->
-                        <!-- <img src="assets/hebergements/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="bunk bed in the heart of the city." width="" height=""> -->
-                        <!-- <img src="assets/hebergements/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="bunk bed in the heart of the city." width="" height=""> -->
+                    
+                    <article class="accommodations-card">
+                        <div class="accommodations-card-header">
+                            <img src="assets/hebergements/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="bunk bed in the heart of the city." width="" height="">                           
+                        </div>
+                        <div class="accommodations-card-body">
+                            <h4>Auberge la Cannebière</h4>
+                            <p>Night starting at <strong>25&euro;</strong></p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="rating-gray">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                            </div>
+                        </div>   
+                    </article>
+                    
+                    <article class="accommodations-card">
+                        <div class="accommodations-card-header">
+                            <img src="assets/hebergements/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="bunk bed in the heart of the city." width="" height="">                           
+                        </div>
+                        <div class="accommodations-card-body">
+                            <h4>Auberge la Cannebière</h4>
+                            <p>Night starting at <strong>25&euro;</strong></p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="rating-gray">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                            </div>
+                        </div>   
+                    </article>
+                    
+                    <article class="accommodations-card">
+                        <div class="accommodations-card-header">
+                            <img src="assets/hebergements/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="bunk bed in the heart of the city." width="" height="">                           
+                        </div>
+                        <div class="accommodations-card-body">
+                            <h4>Auberge la Cannebière</h4>
+                            <p>Night starting at <strong>25&euro;</strong></p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="rating-gray">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                            </div>
+                        </div>   
+                    </article>
+                    
+                    <article class="accommodations-card">
+                        <div class="accommodations-card-header">
+                            <img src="assets/hebergements/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="bunk bed in the heart of the city." width="" height="">                           
+                        </div>
+                        <div class="accommodations-card-body">
+                            <h4>Auberge la Cannebière</h4>
+                            <p>Night starting at <strong>25&euro;</strong></p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="rating-gray">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                            </div>
+                        </div>   
+                    </article>
+                    
+                    <article class="accommodations-card">
+                        <div class="accommodations-card-header">
+                            <img src="assets/hebergements/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="bunk bed in the heart of the city." width="" height="">                           
+                        </div>
+                        <div class="accommodations-card-body">
+                            <h4>Auberge la Cannebière</h4>
+                            <p>Night starting at <strong>25&euro;</strong></p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="rating-gray">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                            </div>
+                        </div>   
+                    </article>
                 </div>
                 
                 <h3>Show more</h3>
             </section>
         
             <!-- this section displays the most populat searches -->
-            <section class="right-card graybg">
-                <div class="right-card-title">
+            <section class="popular-card-container graybg">
+                <div class="popular-card-title">
                     <h2>Most Popular</h2>
                     <i class="fas fa-chart-line"></i>                    
                 </div>
+                
                 <article class="popular-card">
-                    <!-- <img src="assets/activites/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="" width="" height=""> -->
-                    <h4>Auberge la Cannebière</h4>
-                    <p>Night starting at <strong>25&euro;</strong></p>
-                </article>
+                    <div class="popular-card-header">
+                        <img src="assets/hebergements/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="" width="" height="">
+                    </div>
+                    <div class="popular-card-body">
+                        <h4>Morning Sun Hotel</h4>
+                        <p>Night starting at <strong>128&euro;</strong></p>    
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </article> 
+                
+                <article class="popular-card">
+                    <div class="popular-card-header">
+                        <img src="assets/hebergements/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="" width="" height="">
+                    </div>
+                    <div class="popular-card-body">
+                        <h4>Au cœur de l'eau Bed and Breakfast</h4>
+                        <p>Night starting at <strong>71&euro;</strong></p>    
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </article> 
+                
+                <article class="popular-card">
+                    <div class="popular-card-header">
+                        <img src="assets/hebergements/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="" width="" height="">
+                    </div>
+                    <div class="popular-card-body">
+                        <h4>Tout bleu et Blanc Hotel</h4>
+                        <p>Night starting at <strong>68&euro;</strong></p>    
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </article> 
+                
+                
+                
             </section>
         </main>
     
