@@ -8,11 +8,11 @@ body {
 
 #wrapper {
     min-height: calc(100vh - 190px);
-    padding: 10px;
+    padding: 50px;
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 
@@ -33,6 +33,26 @@ nav a {
     color: #0065fc;
 }
 
+.search form {
+    display: flex;
+}
+
+.search input {
+    margin: 0;
+    border: 1px solid #F2F2F2;
+}
+
+.search button {
+    margin: 0;
+    padding: 0 18px;
+    text-align: center;
+    height: 50px;
+    border: none;
+    background-color: #0065FC;
+    border-radius: 0 15px 15px 0;
+    color: white;
+}
+
 .filters {
     display: flex;
     align-items: center;
@@ -51,6 +71,10 @@ button {
     margin-left: 10px;
 }
 
+.fas {
+    color: #0065FC;
+}
+
 button .fas {
     display: flex;
     justify-content: center;
@@ -60,7 +84,6 @@ button .fas {
     width: 2em;
     border-radius: 50%;
     margin-right: 15px;
-    color: #0065FC;    
 }
 
 main {
@@ -71,6 +94,7 @@ main {
     background-color: #F2F2F2;
     border-radius: 15px;
     padding: 20px;
+    /* display: flex; */
 }
 
 .left-card {
@@ -89,12 +113,18 @@ main {
     padding: 5px;
     border-radius: 20px;
     filter: drop-shadow(0 0 0.75rem darkgray);
+    margin: 10px 10px 10px 0;
 }
 
-.stared {
-    color: #0065FC;
+.accommodations-card-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
+.rating-gray .fa-star {
+    color: #F2F2F2;
+}
 
 footer {
     background-color: #F2F2F2;

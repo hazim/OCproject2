@@ -34,8 +34,17 @@
             <p>Downtown or in nature</p>
         </section>
         
+        <!-- This section contains the  -->        
+        <section class="container search">
+            <form>
+                <i class="fas fa-map-marker-alt"></i>
+                <input type="text" placeholder="type in the name of a city"/>
+                <button type="submit">Search</button>
+            </form>
+        </section>
+        
         <!-- section that has the filter buttons -->
-        <section class="filters container">
+        <section class="container filters">
             <h3>Filters</h3>
             <button><i class="fas fa-money-bill-wave"></i> Low cost</button>
             <button><i class="fas fa-heart"></i> Romantic</button>
@@ -53,20 +62,37 @@
             <!-- this section displays the result form your search -->
             <section class="left-card graybg">
                 <h2>Accommodations in Marseille</h2>
-                <article class="accommodations-card">
-                    <img src="assets/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="bunk bed in the heart of the city." width="" height="">
-                    <h4>Auberge la Cannebière</h4>
-                    <p>Night starting at <strong>25&euro;</strong></p>
-                    <div class="rating">
-                        <span class="stared">
+                
+                <div class="accommodations-card-wrapper">
+                    
+                    <article class="accommodations-card">
+                        <img src="assets/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="bunk bed in the heart of the city." width="" height="">
+                        <h4>Auberge la Cannebière</h4>
+                        <p>Night starting at <strong>25&euro;</strong></p>
+                        <div class="rating">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
-                        </span>
-                        <i class="fas fa-star"></i>
-                    </div>
-                </article>
+                            <span class="rating-gray">
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </div>
+                    </article>
+                    
+                        <img src="assets/hebergements/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="bunk bed in the heart of the city." width="" height="">
+                    
+                        <img src="assets/hebergements/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="bunk bed in the heart of the city." width="" height="">
+
+                        <img src="assets/hebergements/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="bunk bed in the heart of the city." width="" height="">
+
+                        <img src="assets/hebergements/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="bunk bed in the heart of the city." width="" height="">
+                        
+                        <img src="assets/hebergements/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="bunk bed in the heart of the city." width="" height="">
+              
+                                        
+                </div>
+                
                 <h3>Show more</h3>
             </section>
         
@@ -74,7 +100,7 @@
             <section class="right-card graybg">
                 <h2>Most Popular</h2>
                 <article class="popular-card">
-                    <!-- <img src="" alt="" width="" height=""> -->
+                    <!-- <img src="assets/activites/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="" width="" height=""> -->
                     <h4>Auberge la Cannebière</h4>
                     <p>Night starting at <span>25&euro;</span></p>
                 </article>
