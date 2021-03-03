@@ -1,74 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Hazim Sami حازم سامي">
+    <meta name="author" content="حازم سامي">
+    <meta name="description" content="This is my solution to Project 2 for my OpenClassrooms submission">
+    <!-- normalize stylesheet served through CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    <!-- font awesome served through a CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <!-- this site's CSS stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
     <title>Reservia</title>
 </head>
 <body>
-    <header>
-        <h1>Reservia</h1>
-        <nav>
-            <a href="#">accommodations</a>
-            <a href="#">activities</a>
-            <a href="">sign up</a>
-        </nav>
-    </header>
-   
-    <h2>Find a place for your dream vacation</h2>
-    <p>Downtown or in nature</p>
-
-    <h3>Filters</h3>
-    <button><i class="fas fa-money-bill-wave"></i> Low cost</button>
-    <button><i class="fas fa-heart"></i> Romantic</button>
-    <button><i class="fas fa-child"></i> Family-friendly</button>
-    <button><i class="fas fa-dog"></i> Pets allowed</button>
-
-    <p><i class="fas fa-info-circle"></i> More than 500 accommodations are available in this city</p>
-
-    <div>
-        <h2>Accommodations in Marseille</h2>
-        <article class="accommodations-card">
-            <!-- <img src="" alt="" width="" height=""> -->
-            <h4>Auberge la Cannebière</h4>
-            <p>Night starting at <span>25&euro;</span></p>
-        </article>
+    <!-- a div with a wrapper in order to generate a footer that is always in the bottom of the page regardless of the length of the content on the page. -->
+    <div id="wrapper"> 
+        <!-- the class container is nearly applied to every single element in order to have the flexibility of having the footer background filing the entire length of any screen regardless although we want to constrain the maximum width of our page layout -->
+        <header class="container top">
+            <h1><img src="assets/Reservia.svg" alt="Reservia Logo"></h1>
+            <nav>
+                <a href="#">accommodations</a>
+                <a href="#">activities</a>
+                <a href="">sign up</a>
+            </nav>
+        </header>
+        
+        <!-- this is the section with the search input box -->
+        <section class="container">
+            <h2>Find a place for your dream vacation</h2>
+            <p>Downtown or in nature</p>
+        </section>
+        
+        <!-- This section contains the  -->        
+        <section class="search container">
+            <form>
+                <span class="search-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </span>
+                <input type="text" placeholder="type a City, Country"/>
+                <button type="submit" class="search-btn">Search</button>
+            </form>
+        </section>
+        
+        <!-- section that has the filter buttons -->
+        <section class="filters container">
+            <h3>Filters</h3>
+            <button class="filters-btn"><i class="fas fa-money-bill-wave"></i> Low cost</button>
+            <button class="filters-btn"><i class="fas fa-heart"></i> Romantic</button>
+            <button class="filters-btn"><i class="fas fa-child"></i> Family-friendly</button>
+            <button class="filters-btn"><i class="fas fa-dog"></i> Pets allowed</button>
+        </section>
+        
+        <!-- this section has the warning dialog box -->
+        <section class="notification container">
+            <p><i class="fas fa-info"></i> More than 500 accommodations are available in this city</p>
+        </section>
+        
+        <!-- main container that displays the bulk of the information presented on the site. This section would still make sense without the rest of the content on the page. -->
+        <main class="container">
+            <!-- this section displays the result form your search -->
+            <section class="left-card graybg">
+                <h2>Accommodations in Marseille</h2>
+                
+                <div class="accommodations-card-wrapper">
+                    
+                    <article class="accommodations-card">
+                        <img src="assets/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="bunk bed in the heart of the city." width="" height="">
+                        <h4>Auberge la Cannebière</h4>
+                        <p>Night starting at <strong>25&euro;</strong></p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-gray">
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </div>
+                    </article>
+                        <!-- <img src="assets/hebergements/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="bunk bed in the heart of the city." width="" height=""> -->
+                        <!-- <img src="assets/hebergements/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="bunk bed in the heart of the city." width="" height=""> -->
+                        <!-- <img src="assets/hebergements/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="bunk bed in the heart of the city." width="" height=""> -->
+                        <!-- <img src="assets/hebergements/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="bunk bed in the heart of the city." width="" height=""> -->
+                        <!-- <img src="assets/hebergements/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="bunk bed in the heart of the city." width="" height=""> -->
+                </div>
+                
+                <h3>Show more</h3>
+            </section>
+        
+            <!-- this section displays the most populat searches -->
+            <section class="right-card graybg">
+                <div class="right-card-title">
+                    <h2>Most Popular</h2>
+                    <i class="fas fa-chart-line"></i>                    
+                </div>
+                <article class="popular-card">
+                    <!-- <img src="assets/activites/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="" width="" height=""> -->
+                    <h4>Auberge la Cannebière</h4>
+                    <p>Night starting at <strong>25&euro;</strong></p>
+                </article>
+            </section>
+        </main>
+    
+        <section class="container">
+        <h2>Activities in Marseille</h2>
+            <div>
+                <div class="activities-card">
+                    <!-- <img src="" alt="" height=""> -->
+                    <h4>Old Port</h4>
+                </div>
+            </div>
+        </section>
+        
+        
     </div>
 
-    <div>
-        <h2>Most Popular</h2>
-        <article class="popular-card">
-            <!-- <img src="" alt="" width="" height=""> -->
-            <h4>Auberge la Cannebière</h4>
-            <p>Night starting at <span>25&euro;</span></p>
-        </article>
-    </div>
-
-    <h2>Activities in Marseille</h2>
-    <div>
-        <div class="activities-card">
-            <!-- <img src="" alt="" height=""> -->
-            <h4>Old Port</h4>
-        </div>
-    </div>
+    <!-- this is the footer -->
     <footer>
-        <div class="footer-col">
-            <h5>about</h5>
-            <a href="#">site map</a>
-            <a href="#">general terms and conditions</a>
-            <a href="#">data and privacy</a>
-        </div>
-        <div class="footer-col">
-            <h5>our accommodations</h5>
-            <a href="#">quality assessment</a>
-            <a href="#">you have a hotel?</a>
-        </div>
-        <div class="footer-col">
-            <h5>assistance</h5>
-            <a href="#">help desk</a>
-            <a href="#">contact us</a>
+        <div class="footer container">
+            <div class="footer-col">
+                <h5>about</h5>
+                <a href="#">site map</a>
+                <a href="#">general terms and conditions</a>
+                <a href="#">data and privacy</a>
+            </div>
+            <div class="footer-col">
+                <h5>our accommodations</h5>
+                <a href="#">quality assessment</a>
+                <a href="#">you have a hotel?</a>
+            </div>
+            <div class="footer-col">
+                <h5>assistance</h5>
+                <a href="#">help desk</a>
+                <a href="#">contact us</a>
+            </div>
         </div>
     </footer>
 </body>

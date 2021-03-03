@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,600;0,700;1,300&display=swap');
+
+body {
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+}
+
+button {
+    font-weight: bold;
+}
+
+
+#wrapper {
+    min-height: calc(100vh - 190px);
+    padding: 50px;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.top {
+    margin: 0 0 50px 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.4em;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #0065fc;
+}
+
+strong {
+    font-weight: 600;
+}
+
+/* ---------------------------------------------
+    Search section 
+--------------------------------------------- */
+.search form {
+    display: flex;
+    height: 50px;
+    margin: 0 0 30px 0;
+}
+
+.search-icon {
+    display: flex;
+    align-items: center;
+    padding: 0 19.5px;
+    background-color: #F2F2F2;
+    border-radius: 15px 0 0 15px;
+}
+
+.search-icon .fas {
+    color: black;
+}
+
+.search input {
+    margin: 0;
+    border: 1px solid #F2F2F2;
+    padding: 0 18px;
+    font-weight: bold;
+}
+
+.search button {
+    margin: 0;
+    padding: 0 18px;
+    text-align: center;
+    border: none;
+    background-color: #0065FC;
+    border-radius: 0 15px 15px 0;
+    color: white;
+}
+
+/* ---------------------------------------------
+Filter section 
+--------------------------------------------- */
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    margin-bottom: 20px; 
+}
+
+.filters-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 2px solid #F2F2F2;
+    border-radius: 30px;
+    padding: 0 20px 0 0;
+    margin-left: 10px;
+}
+
+.filters-btn .fas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DEEBFF;
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+    margin-right: 15px;
+    color: #0065FC;
+}
+
+/* ---------------------------------------------
+Main section 
+--------------------------------------------- */
+
+main {
+    display: flex;
+}
+
+.graybg {
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    padding: 40px;
+    /* display: flex; */
+}
+
+.left-card {
+    flex-grow: 2;
+    margin-right: 10px;
+}
+
+.accommodations-card img {
+    width: 200px;
+    border-radius: 15px 15px 0 0;   
+}
+
+.accommodations-card {
+    background-color: white;
+    width: 200px;
+    padding: 5px;
+    border-radius: 20px;
+    filter: drop-shadow(0 0 0.75rem darkgray);
+    margin: 10px 10px 10px 0;
+}
+
+.accommodations-card-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.rating-gray .fa-star {
+    color: #F2F2F2;
+}
+
+.right-card-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-chart-line {
+    font-size: 1.2em;
+}
+
+footer {
+    background-color: #F2F2F2;
+    padding: 50px;
+}
+
+.footer {
+    display: flex;
+    text-transform: capitalize;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+footer a {
+    font-size: .8em;
+    line-height: 2;
+    text-decoration: none;
+    color: black
+}
