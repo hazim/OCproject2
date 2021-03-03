@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,600;0,700;1,300&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0 auto;
     font-family: 'Raleway', sans-serif;
@@ -11,8 +15,8 @@ button {
 
 
 #wrapper {
-    min-height: calc(100vh - 340px);
-    padding: 50px;
+    min-height: calc(100vh - 240px);
+    padding: 0 50px;
 }
 
 .container {
@@ -20,9 +24,29 @@ button {
     margin: 0 auto;
 }
 
+h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 1.4em;
+}
+
+strong {
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+}
+
+/* ---------------------------------------------
+Top / Navigation section 
+--------------------------------------------- */
+
 .top {
+    /* padding-top: 50px; */
+    margin-top: 50px;
     margin-bottom: 50px;
-    
 }
 
 header {
@@ -31,12 +55,10 @@ header {
     align-items: flex-start;
 }
 
-h1, h2, h3, h4 {
-    margin: 0;
-}
-
-h2 {
-    font-size: 1.4em;
+nav {
+    display: flex;
+    align-items: center;
+    
 }
 
 nav a {
@@ -44,10 +66,11 @@ nav a {
     text-decoration: none;
     text-transform: capitalize;
     color: #0065fc;
+    padding: 10px
 }
 
-strong {
-    font-weight: 600;
+nav a:hover {
+    border-top: 5px solid #0065FC;
 }
 
 /* ---------------------------------------------
@@ -123,6 +146,33 @@ Filter section
 }
 
 /* ---------------------------------------------
+Notification section 
+--------------------------------------------- */
+
+.notification {
+    display: flex;
+    align-items: start;
+}
+
+.notification p {
+    margin: 0;
+    padding: 4px;
+}
+
+.fa-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #F2F2F2;
+    color: #0065FC;
+    font-size: .8em;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* ---------------------------------------------
 Main section 
 --------------------------------------------- */
 
@@ -137,44 +187,115 @@ main {
     /* display: flex; */
 }
 
-.left-card {
-    flex-grow: 2;
+/* ---------------------------------------------
+Main section - Accommodations Container
+--------------------------------------------- */
+.accommodations-container {
+    flex-grow: 4;
     margin-right: 10px;
+    max-width: 880px;
 }
 
-.accommodations-card img {
-    width: 200px;
-    border-radius: 15px 15px 0 0;   
+.accommodations-container h2 {
+    margin-bottom: 30px
+}
+
+.accommodations-cards-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .accommodations-card {
     background-color: white;
-    width: 200px;
-    padding: 5px;
+    width: 246px;
+    /* padding: 5px; */
     border-radius: 20px;
     filter: drop-shadow(0 0 0.75rem darkgray);
-    margin: 10px 10px 10px 0;
+    margin-bottom: 20px;
+    border: 5px solid white;
 }
 
-.accommodations-card-wrapper {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+.accommodations-card-header img {
+    width: 100%;
+    height: 113px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;   
+}
+
+.accommodations-card-body {
+    padding: 10px 17px;
+    height: 80px;
+}
+
+.accommodations-card-body p {
+    margin: 8px 0;
+}
+
+.rating {
+    font-size: .6em;
+    color: #0065FC;
+    margin: 0;
 }
 
 .rating-gray .fa-star {
     color: #F2F2F2;
 }
 
-.right-card-title {
+/* ---------------------------------------------
+Main section - Popular Container
+--------------------------------------------- */
+
+.popular-card-container {
+    flex-grow: 2;
+    max-width: 420px;
+}
+
+.popular-card-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 30px;
+}
+
+.popular-card {
+    display: flex;
+}
+
+.popular-card {
+    margin-bottom: 20px;
+}
+
+.popular-card-header {
+    width: 132px;
+    height: 144px;
+}
+
+.popular-card-header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px 0 0 15px;
+    border: 5px solid white;   
+}
+
+.popular-card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 211px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 0 15px 15px 0;
 }
 
 .fa-chart-line {
     font-size: 1.2em;
 }
+
+/* ---------------------------------------------
+Footer section
+--------------------------------------------- */
 
 footer {
     background-color: #F2F2F2;
