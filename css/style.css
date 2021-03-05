@@ -7,12 +7,12 @@
 body {
     margin: 0 auto;
     font-family: 'Raleway', sans-serif;
+    padding: 1px;
 }
 
 button {
     font-weight: bold;
 }
-
 
 #wrapper {
     min-height: calc(100vh - 240px);
@@ -20,11 +20,12 @@ button {
 }
 
 .container {
-    max-width: 1440px;
+    max-width: 1340px;
     margin: 0 auto;
+    padding: 0;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, div, section, header, img {
     margin: 0;
     padding: 0;
 }
@@ -39,26 +40,34 @@ strong {
     margin: 0;
 }
 
+.accommodations-card, .popular-card, .activities-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
 /* ---------------------------------------------
 Top / Navigation section 
 --------------------------------------------- */
 
-.top {
-    /* padding-top: 50px; */
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
 header {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
+
+header h1 {
+    padding: 25px 0;
+}
+
+/* h1 img {
+    padding: 0;
+    margin: 0;
+} */
 
 nav {
     display: flex;
     align-items: center;
-    
 }
 
 nav a {
@@ -66,10 +75,10 @@ nav a {
     text-decoration: none;
     text-transform: capitalize;
     color: #0065fc;
-    padding: 10px
+    padding: 45px 0;
 }
 
-nav a:hover {
+.top-nav-bottom a:hover {
     border-top: 5px solid #0065FC;
 }
 
@@ -79,7 +88,12 @@ nav a:hover {
 .search form {
     display: flex;
     height: 50px;
+    padding-left: 3px;
     margin: 0 0 30px 0;
+}
+
+.search h2, .search p {
+    padding-left: 3px;
 }
 
 .search-icon {
@@ -118,8 +132,9 @@ Filter section
 .filters {
     display: flex;
     flex-wrap: wrap;
-    /* align-items: center; */
-    margin-bottom: 20px; 
+    align-items: center;
+    padding-left: 10px;
+    margin-bottom: 40px; 
 }
 
 .filters-btn {
@@ -138,8 +153,8 @@ Filter section
     justify-content: center;
     align-items: center;
     background-color: #DEEBFF;
-    height: 2em;
-    width: 2em;
+    height: 3em;
+    width: 3em;
     border-radius: 50%;
     margin-right: 15px;
     color: #0065FC;
@@ -152,11 +167,14 @@ Notification section
 .notification {
     display: flex;
     align-items: start;
+    padding-left: 6px;
+    margin-bottom: 20px;
 }
 
 .notification p {
     margin: 0;
     padding: 4px;
+    max-width: 400px;
 }
 
 .fa-info {
@@ -185,51 +203,7 @@ main {
     border-radius: 15px;
     padding: 40px;
     /* display: flex; */
-}
-
-/* ---------------------------------------------
-Main section - Accommodations Container
---------------------------------------------- */
-.accommodations-container {
-    flex-grow: 4;
-    margin-right: 10px;
-    max-width: 880px;
-}
-
-.accommodations-container h2 {
-    margin-bottom: 30px
-}
-
-.accommodations-cards-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.accommodations-card {
-    background-color: white;
-    width: 246px;
-    /* padding: 5px; */
-    border-radius: 20px;
-    filter: drop-shadow(0 0 0.75rem darkgray);
-    margin-bottom: 20px;
-    border: 5px solid white;
-}
-
-.accommodations-card-header img {
-    width: 100%;
-    height: 113px;
-    object-fit: cover;
-    border-radius: 15px 15px 0 0;   
-}
-
-.accommodations-card-body {
-    padding: 10px 17px;
-    height: 80px;
-}
-
-.accommodations-card-body p {
-    margin: 8px 0;
+    margin-bottom: 65px;
 }
 
 .rating {
@@ -243,12 +217,67 @@ Main section - Accommodations Container
 }
 
 /* ---------------------------------------------
+Main section - Accommodations Container
+--------------------------------------------- */
+.accommodations-container {
+    flex-grow: 4;
+    margin-right: 40px;
+}
+
+.accommodations-container h2 {
+    margin-bottom: 30px
+}
+
+.accommodations-cards-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* gap: 30px; */
+}
+
+.accommodations-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 246px;
+    /* padding: 5px; */
+    border-radius: 15px;
+    margin-bottom: 30px;
+    border: 5px solid white;
+}
+
+.accommodations-card-header img {
+    width: 100%;
+    height: 113px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;   
+}
+
+.accommodations-card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 17px;
+    height: 80px;
+}
+
+.accommodations-card-body p {
+    margin: 0;
+}
+
+
+.accommodations-container h3 {
+    margin-top: 13px;
+}
+
+
+/* ---------------------------------------------
 Main section - Popular Container
 --------------------------------------------- */
 
 .popular-card-container {
     flex-grow: 2;
-    max-width: 420px;
+    /* max-width: 420px; */
 }
 
 .popular-card-title {
@@ -263,7 +292,8 @@ Main section - Popular Container
 }
 
 .popular-card {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    border-radius: 15px;
 }
 
 .popular-card-header {
@@ -294,12 +324,53 @@ Main section - Popular Container
 }
 
 /* ---------------------------------------------
+Main section - Popular Container
+--------------------------------------------- */
+
+.activities-container {
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 27px;
+}
+.activities-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    width: 302px;
+    background-color: white;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.activities-card-header img {
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    /* height: 395px; */
+    object-fit: cover;
+}
+
+.activities-card-body {
+    background-color: white;
+    border-radius: 0 0 15px 15px;
+    height: 55px;
+    padding: 19px; 
+}
+
+/* ---------------------------------------------
 Footer section
 --------------------------------------------- */
 
 footer {
     background-color: #F2F2F2;
     padding: 50px;
+    margin: 60px 0 0 0;
 }
 
 .footer {
