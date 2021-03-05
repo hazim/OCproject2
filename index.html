@@ -20,7 +20,8 @@
     <div id="wrapper"> 
         <!-- the class container is nearly applied to every single element in order to have the flexibility of having the footer background filing the entire length of any screen regardless although we want to constrain the maximum width of our page layout -->
         <header class="container top">
-            <h1><img src="assets/Reservia.svg" alt="Reservia Logo"></h1>
+            <!-- <h1></h1> -->
+                <img src="assets/Reservia.svg" alt="Reservia Logo">
             <nav>
                 <div class="top-nav-bottom">
                     <a href="#">accommodations</a>
@@ -30,14 +31,10 @@
             </nav>
         </header>
         
-        <!-- this is the section with the search input box -->
-        <section class="container">
+        <!-- Search section: it contains the h2, p and the search bar -->        
+        <section class="search container">
             <h2>Find a place for your dream vacation</h2>
             <p>Downtown or in nature</p>
-        </section>
-        
-        <!-- This section contains the  -->        
-        <section class="search container">
             <form>
                 <span class="search-icon">
                     <i class="fas fa-map-marker-alt"></i>
@@ -59,7 +56,7 @@
         <!-- Notification section: dialog box -->
         <section class="notification container">
             <i class="fas fa-info"></i> 
-            <p>More than 500 accommodations are available in this city</p>
+            <p>More than 500 accommodations are available in this city.</p>
         </section>
         
         <!-- main container that displays the bulk of the information presented on the site. This section would still make sense without the rest of the content on the page. -->
@@ -94,16 +91,14 @@
                             <img src="assets/hebergements/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="bunk bed in the heart of the city." width="" height="">                           
                         </div>
                         <div class="accommodations-card-body">
-                            <h4>Auberge la Cannebière</h4>
-                            <p>Night starting at <strong>25&euro;</strong></p>
+                            <h4>Hôtek du port</h4>
+                            <p>Night starting at <strong>52&euro;</strong></p>
                             <div class="rating">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
-                                <span class="rating-gray">
-                                    <i class="fas fa-star"></i>
-                                </span>
+                                <i class="fas fa-star"></i>
                             </div>
                         </div>   
                     </article>
@@ -113,8 +108,8 @@
                             <img src="assets/hebergements/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="bunk bed in the heart of the city." width="" height="">                           
                         </div>
                         <div class="accommodations-card-body">
-                            <h4>Auberge la Cannebière</h4>
-                            <p>Night starting at <strong>25&euro;</strong></p>
+                            <h4>Les mouettes Hotel</h4>
+                            <p>Night starting at <strong>76&euro;</strong></p>
                             <div class="rating">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -132,14 +127,14 @@
                             <img src="assets/hebergements/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="bunk bed in the heart of the city." width="" height="">                           
                         </div>
                         <div class="accommodations-card-body">
-                            <h4>Auberge la Cannebière</h4>
-                            <p>Night starting at <strong>25&euro;</strong></p>
+                            <h4>Hôtel de la mer</h4>
+                            <p>Night starting at <strong>46&euro;</strong></p>
                             <div class="rating">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
                                 <span class="rating-gray">
+                                    <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                 </span>
                             </div>
@@ -151,8 +146,8 @@
                             <img src="assets/hebergements/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="bunk bed in the heart of the city." width="" height="">                           
                         </div>
                         <div class="accommodations-card-body">
-                            <h4>Auberge la Cannebière</h4>
-                            <p>Night starting at <strong>25&euro;</strong></p>
+                            <h4>Auberge Le Panier</h4>
+                            <p>Night starting at <strong>23&euro;</strong></p>
                             <div class="rating">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -170,16 +165,14 @@
                             <img src="assets/hebergements/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="bunk bed in the heart of the city." width="" height="">                           
                         </div>
                         <div class="accommodations-card-body">
-                            <h4>Auberge la Cannebière</h4>
-                            <p>Night starting at <strong>25&euro;</strong></p>
+                            <h4>Hôtel chez Amina</h4>
+                            <p>Night starting at <strong>96&euro;</strong></p>
                             <div class="rating">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
-                                <span class="rating-gray">
-                                    <i class="fas fa-star"></i>
-                                </span>
+                                <i class="fas fa-star"></i>
                             </div>
                         </div>   
                     </article>
@@ -245,19 +238,74 @@
                         </div>
                     </div>
                 </article> 
-                
-                
-                
             </section>
         </main>
+        
+        <!-- Activities section --> 
     
         <section class="container">
         <h2>Activities in Marseille</h2>
-            <div>
+            <div class="activities-container">
                 <div class="activities-card">
-                    <!-- <img src="" alt="" height=""> -->
-                    <h4>Old Port</h4>
+                    <div class="activities-card-header">
+                        <img src="assets/activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="" height="395px">
+                    </div>
+                    <div class="activities-card-body">
+                        <h4>Old Port</h4>
+                    </div>
                 </div>
+                
+                <div class="column">
+                    <div class="activities-card">
+                        <div class="activities-card-header">
+                            <img src="assets/activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="" height="200px">
+                        </div>
+                        <div class="activities-card-body">
+                            <h4>Pomègues Fort</h4>
+                        </div>
+                    </div>
+                    
+                    <div class="activities-card">
+                        <div class="activities-card-header">
+                            <img src="assets/activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="" height="100px">
+                        </div>
+                        <div class="activities-card-body">
+                            <h4>Frioul Island</h4>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="activities-card">
+                    <div class="activities-card-header">
+                        <img src="assets/activites/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="" height="395px">
+                    </div>
+                    <div class="activities-card-body">
+                        <h4>Calanques National Park</h4>
+                    </div>
+                </div>
+                
+                <div class="column">
+                    <div class="activities-card">
+                        <div class="activities-card-header">
+                            <img src="assets/activites/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="" height="150px">
+                        </div>
+                        <div class="activities-card-body">
+                            <h4>Notre-Dame-de-la-Garde</h4>
+                        </div>
+                    </div>
+                    
+                    <div class="activities-card">
+                        <div class="activities-card-header">
+                            <img src="assets/activites/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="" height="150px">
+                        </div>
+                        <div class="activities-card-body">
+                            <h4>Longchamp Park</h4>
+                        </div>
+                    </div>
+                    
+                </div>
+                
             </div>
         </section>
         
