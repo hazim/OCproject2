@@ -16,58 +16,61 @@
     <title>Reservia</title>
 </head>
 <body>
-    <!-- a div with a wrapper in order to generate a footer that is always in the bottom of the page regardless of the length of the content on the page. -->
-    <div id="wrapper"> 
-        <!-- the class container is nearly applied to every single element in order to have the flexibility of having the footer background filing the entire length of any screen regardless although we want to constrain the maximum width of our page layout -->
-        <header class="container top">
-            <!-- <h1></h1> -->
-                <img src="assets/Reservia.svg" alt="Reservia Logo">
-            <nav>
-                <div class="top-nav-bottom">
-                    <a href="#">accommodations</a>
-                    <a href="#">activities</a>
-                </div>
-                    <a href="#"><strong>sign up</strong></a>
-            </nav>
-        </header>
-        
-        <!-- Search section: it contains the h2, p and the search bar -->        
-        <section class="search container">
-            <h2>Find a place for your dream vacation</h2>
-            <p>Downtown or in nature</p>
-            <form>
-                <span class="search-icon">
-                    <i class="fas fa-map-marker-alt"></i>
-                </span>
-                <input type="text" placeholder="type a City, Country"/>
-                <button type="submit" class="search-btn">Search</button>
-            </form>
-        </section>
-        
-        <!-- Filter section: with filter buttons -->
-        <section class="filters container">
-            <h3>Filters</h3>
+    
+    <!-- the class container is nearly applied to every single element in order to have the flexibility of having the footer background filing the entire length of any screen regardless although we want to constrain the maximum width of our page layout -->
+    <header class="top">
+        <!-- <h1></h1> -->
+            <img src="assets/Reservia.svg" alt="Reservia Logo">
+        <nav>
+            <div class="top-nav-bottom">
+                <a href="#" class="selected">accommodations</a>
+                <a href="#">activities</a>
+            </div>
+                <a href="#"><strong>sign up</strong></a>
+        </nav>
+    </header>
+    
+    <!-- Search section: it contains the h2, p and the search bar -->        
+    <section class="search container">
+        <h2>Find a place for your dream vacation</h2>
+        <p>Downtown or in nature</p>
+        <form>
+            <span class="search-icon">
+                <i class="fas fa-map-marker-alt"></i>
+            </span>
+            <input type="text" placeholder="type a City, Country"/>
+            <button type="submit" class="search-btn-txt">Search</button>
+            <button class="search-btn-icon"><i class="fas fa-search"></i></button>
+        </form>
+    </section>
+    
+    <!-- Filter section: with filter buttons -->
+    <section class="filters container">
+        <h3>Filters</h3>
+        <div class="buttons">
             <button class="filters-btn"><i class="fas fa-money-bill-wave"></i> Low cost</button>
             <button class="filters-btn"><i class="fas fa-heart"></i> Romantic</button>
             <button class="filters-btn"><i class="fas fa-child"></i> Family-friendly</button>
-            <button class="filters-btn"><i class="fas fa-dog"></i> Pets allowed</button>
-        </section>
-        
-        <!-- Notification section: dialog box -->
-        <section class="notification container">
-            <i class="fas fa-info"></i> 
-            <p>More than 500 accommodations are available in this city.</p>
-        </section>
-        
-        <!-- main container that displays the bulk of the information presented on the site. This section would still make sense without the rest of the content on the page. -->
-        <main class="container">
-            <!-- this section displays the result form your search -->
-            <section class="accommodations-container graybg">
-                <h2>Accommodations in Marseille</h2>
+            <button class="filters-btn"><i class="fas fa-dog"></i> Pets allowed</button>    
+        </div>
+    </section>
+    
+    <!-- Notification section: dialog box -->
+    <section class="notification container">
+        <i class="fas fa-info"></i> 
+        <p>More than 500 accommodations are available in this city.</p>
+    </section>
+    
+    <!-- main container that displays the bulk of the information presented on the site. This section would still make sense without the rest of the content on the page. -->
+    <main class="container">
+        <!-- this section displays the result form your search -->
+        <section class="accommodations-container graybg">
+            <h2>Accommodations in Marseille</h2>
+            
+            <div class="accommodations-cards-container">
                 
-                <div class="accommodations-cards-container">
-                    
-                    <article class="accommodations-card">
+                <article class="accommodations-card">
+                    <a href="#" class="card-link">
                         <div class="accommodations-card-header">
                             <img src="assets/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="bunk bed in the heart of the city." width="" height="">                           
                         </div>
@@ -84,9 +87,11 @@
                                 </span>
                             </div>
                         </div>   
-                    </article>
-                    
-                    <article class="accommodations-card">
+                    </a>
+                </article>
+                
+                <article class="accommodations-card">
+                    <a href="#" class="card-link">
                         <div class="accommodations-card-header">
                             <img src="assets/hebergements/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="bunk bed in the heart of the city." width="" height="">                           
                         </div>
@@ -101,9 +106,11 @@
                                 <i class="fas fa-star"></i>
                             </div>
                         </div>   
-                    </article>
-                    
-                    <article class="accommodations-card">
+                    </a>
+                </article>
+                
+                <article class="accommodations-card">
+                    <a href="#" class="card-link">
                         <div class="accommodations-card-header">
                             <img src="assets/hebergements/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="bunk bed in the heart of the city." width="" height="">                           
                         </div>
@@ -120,9 +127,11 @@
                                 </span>
                             </div>
                         </div>   
-                    </article>
-                    
-                    <article class="accommodations-card">
+                    </a>
+                </article>
+                
+                <article class="accommodations-card">
+                    <a href="#" class="card-link">
                         <div class="accommodations-card-header">
                             <img src="assets/hebergements/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="bunk bed in the heart of the city." width="" height="">                           
                         </div>
@@ -139,9 +148,11 @@
                                 </span>
                             </div>
                         </div>   
-                    </article>
-                    
-                    <article class="accommodations-card">
+                    </a>
+                </article>
+                
+                <article class="accommodations-card">
+                    <a href="#" class="card-link">
                         <div class="accommodations-card-header">
                             <img src="assets/hebergements/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="bunk bed in the heart of the city." width="" height="">                           
                         </div>
@@ -158,9 +169,11 @@
                                 </span>
                             </div>
                         </div>   
-                    </article>
-                    
-                    <article class="accommodations-card">
+                    </a>
+                </article>
+                
+                <article class="accommodations-card">
+                    <a href="#" class="card-link">
                         <div class="accommodations-card-header">
                             <img src="assets/hebergements/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="bunk bed in the heart of the city." width="" height="">                           
                         </div>
@@ -175,19 +188,21 @@
                                 <i class="fas fa-star"></i>
                             </div>
                         </div>   
-                    </article>
-                </div>
-                
-                <h3>Show more</h3>
-            </section>
-        
-            <!-- this section displays the most populat searches -->
-            <section class="popular-card-container graybg">
-                <div class="popular-card-title">
-                    <h2>Most Popular</h2>
-                    <i class="fas fa-chart-line"></i>                    
-                </div>
-                
+                    </a>
+                </article>
+            </div>
+            
+            <h3>Show more</h3>
+        </section>
+    
+        <!-- this section displays the most populat searches -->
+        <section class="popular-card-container graybg">
+            <div class="popular-card-title">
+                <h2>Most Popular</h2>
+                <i class="fas fa-chart-line"></i>                    
+            </div>
+            
+            <a href="#" class="card-link">
                 <article class="popular-card">
                     <div class="popular-card-header">
                         <img src="assets/hebergements/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="" width="" height="">
@@ -204,7 +219,9 @@
                         </div>
                     </div>
                 </article> 
-                
+            </a>
+            
+            <a href="#" class="card-link">
                 <article class="popular-card">
                     <div class="popular-card-header">
                         <img src="assets/hebergements/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="" width="" height="">
@@ -217,11 +234,15 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+                            <span class="rating-gray">
+                                <i class="fas fa-star"></i>
+                            </span>
                         </div>
                     </div>
                 </article> 
-                
+            </a>
+            
+            <a href="#" class="card-link">
                 <article class="popular-card">
                     <div class="popular-card-header">
                         <img src="assets/hebergements/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="" width="" height="">
@@ -234,87 +255,99 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+                            <span class="rating-gray">
+                                <i class="fas fa-star"></i>
+                            </span>
                         </div>
                     </div>
                 </article> 
-            </section>
-        </main>
-        
-        <!-- Activities section --> 
+            </a>    
+        </section>
+    </main>
     
-        <section class="container">
-        <h2>Activities in Marseille</h2>
-            <div class="activities-container">
-                <div class="activities-card">
+    <!-- Activities section --> 
+
+    <section class="container">
+    <h2>Activities in Marseille</h2>
+        <div class="activities-container">
+            
+            <div class="activities-card">
+                <a href="#" class="card-link">
                     <div class="activities-card-header">
                         <img src="assets/activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="" height="395px">
                     </div>
                     <div class="activities-card-body">
                         <h4>Old Port</h4>
                     </div>
-                </div>
-                
-                <div class="column">
-                    <div class="activities-card">
+                </a>
+            </div>
+            
+            <div class="column">
+                <div class="activities-card">
+                    <a href="#" class="card-link">
                         <div class="activities-card-header">
                             <img src="assets/activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="" height="200px">
                         </div>
                         <div class="activities-card-body">
                             <h4>Pomègues Fort</h4>
                         </div>
-                    </div>
-                    
-                    <div class="activities-card">
+                    </a>
+                </div>
+                
+                <div class="activities-card">
+                    <a href="#" class="card-link">
                         <div class="activities-card-header">
                             <img src="assets/activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="" height="100px">
                         </div>
                         <div class="activities-card-body">
                             <h4>Frioul Island</h4>
                         </div>
-                    </div>
+                    </a>
                 </div>
-                
-                
-                <div class="activities-card">
+            </div>
+            
+            
+            <div class="activities-card">
+                <a href="#" class="card-link">
                     <div class="activities-card-header">
                         <img src="assets/activites/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="" height="395px">
                     </div>
                     <div class="activities-card-body">
                         <h4>Calanques National Park</h4>
                     </div>
-                </div>
-                
-                <div class="column">
-                    <div class="activities-card">
+                </a>
+            </div>
+            
+            <div class="column">
+                <div class="activities-card">
+                    <a href="#" class="card-link">
                         <div class="activities-card-header">
                             <img src="assets/activites/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="" height="150px">
                         </div>
                         <div class="activities-card-body">
                             <h4>Notre-Dame-de-la-Garde</h4>
                         </div>
-                    </div>
-                    
-                    <div class="activities-card">
+                    </a>
+                </div>
+                
+                <div class="activities-card">
+                    <a href="#" class="card-link">
                         <div class="activities-card-header">
                             <img src="assets/activites/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="" height="150px">
                         </div>
                         <div class="activities-card-body">
                             <h4>Longchamp Park</h4>
                         </div>
-                    </div>
-                    
-                </div>
-                
+                    </a>
+                </div> 
             </div>
-        </section>
-        
-        
-    </div>
+            
+        </div>
+    </section>
 
     <!-- this is the footer -->
     <footer>
-        <div class="footer container">
+        <div class="footer">
             <div class="footer-col">
                 <h5>about</h5>
                 <a href="#">site map</a>
