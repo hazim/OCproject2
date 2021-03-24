@@ -172,7 +172,7 @@ Filter section
    border-radius: 30px;
    padding: 0 20px 0 0;
    margin: 0 10px 10px 0;
-   transition: background-color .5s ease-in;
+   transition: background-color 2s ease-in;
 }
 
 button.filters-btn:hover {
