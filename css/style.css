@@ -163,7 +163,7 @@ Filter section
    align-items: center;
 }
 
-button.filters-btn {
+.filters-btn {
    display: flex;
    justify-content: center;
    align-items: center;
@@ -172,7 +172,6 @@ button.filters-btn {
    border-radius: 30px;
    padding: 0 20px 0 0;
    margin: 0 10px 10px 0;
-   /* transition: background-color 2s ease; */
 }
 
 button.filters-btn:hover {
@@ -206,6 +205,7 @@ Notification section
    margin: 0;
    padding: 4px;
    max-width: 400px;
+   font-weight: normal;
 }
 
 .fa-info {
