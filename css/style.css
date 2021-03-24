@@ -163,7 +163,7 @@ Filter section
    align-items: center;
 }
 
-.filters-btn {
+button.filters-btn {
    display: flex;
    justify-content: center;
    align-items: center;
