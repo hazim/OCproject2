@@ -174,7 +174,7 @@ Filter section
    margin: 0 10px 10px 0;
 }
 
-.filters-btn:hover {
+button.filters-btn:hover {
    background-color: cadetblue;
 }
 
