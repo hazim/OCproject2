@@ -281,11 +281,11 @@ Main section - Accommodations Container
 .accommodations-card {
    display: flex;
    flex-direction: column;
-   background-color: white;
+   background-color: #ffffff;
    width: 246px;
    border-radius: 15px;
    margin-bottom: 30px;
-   border: 5px solid white;
+   border: 5px solid #F2F2F2;
 }
 
 .accommodations-card-header img {
