@@ -90,7 +90,7 @@ header a {
 }
 
 header a:hover, .selected {
-   border-top: 5px solid #0065FC;
+   border-top: 3px solid #0065FC;
 }
 
 /* ---------------------------------------------
@@ -172,10 +172,12 @@ Filter section
    border-radius: 30px;
    padding: 0 20px 0 0;
    margin: 0 10px 10px 0;
+   transition: background-color .2s ease-out;
 }
 
 button.filters-btn:hover {
-   background-color: hsl(216, 100, 94);
+   transition: background-color .2s ease-in;
+   background-color: #DEEBFF;
 }
 
 .filters-btn .fas {
@@ -205,6 +207,7 @@ Notification section
    margin: 0;
    padding: 4px;
    max-width: 400px;
+   font-size: 1rem;
    font-weight: normal;
 }
 
@@ -421,7 +424,7 @@ Footer section
 
 footer {
    background-color: #F2F2F2;
-   /* padding: 50px; */
+   padding: 35px 0 50px 0;
    margin: 60px 0 0 0;
 }
 
