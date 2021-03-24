@@ -175,7 +175,7 @@ Filter section
 }
 
 button.filters-btn:hover {
-   background-color: #DEEBFF;
+   background-color: hsl(216, 100, 94);
 }
 
 .filters-btn .fas {
