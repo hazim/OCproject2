@@ -507,7 +507,7 @@ Media queries
    
    header nav a, header a {
       display: block;
-      border-top: revert;
+      /* border-top: revert; */
       padding: 20px 0;
    }
    
@@ -521,7 +521,7 @@ Media queries
    }
    
    header a:hover , .selected {
-      border: revert;
+      /* border: revert; */
       border-bottom: 3px solid #0065FC;
    }
    
@@ -534,7 +534,7 @@ Media queries
    }
    
    .search-btn-icon {
-      display: revert;
+      /* display: revert; */
       margin: 0;
       padding: 0 18px;
       text-align: center;
@@ -546,7 +546,7 @@ Media queries
    }
 
    .filters {
-      display: revert;
+      /* display: revert; */
       padding-left: 20px;
    }
    
