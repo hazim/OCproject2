@@ -521,7 +521,7 @@ Media queries
    }
    
    header a:hover , .selected {
-      /* border: revert; */
+      border-top: 3px solid white; 
       border-bottom: 3px solid #0065FC;
    }
    
@@ -534,7 +534,7 @@ Media queries
    }
    
    .search-btn-icon {
-      /* display: revert; */
+      display: block;
       margin: 0;
       padding: 0 18px;
       text-align: center;
