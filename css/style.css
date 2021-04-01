@@ -589,6 +589,7 @@ Media queries
    .accommodations-card {
       margin: 0 auto 30px auto;
       max-width: 344px;
+      width: 100%;
    }  
    
    .activities-container {
@@ -600,6 +601,7 @@ Media queries
    .activities-card {
       margin: 0 auto 30px;
       max-width: 344px;
+      width: 100%;
    }
    
    .img-size-1, .img-size-2, .img-size-3, .img-size-4 {
