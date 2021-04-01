@@ -1,4 +1,7 @@
 # OpenClassrooms / Project 02 
+
+![project preview](https://i.ibb.co/P9s6z9g/OC-project02.png)
+
 ## Turn Mock-ups Into a Web Page
 
 This is my submission for Project 02 on the front-end dev path. It will get updated with time as I learn better ways of achieving cleaner and more sustainable code. 
